@@ -79,21 +79,25 @@ font-size: 0.8rem; /* if you have descriptions */
     padding: 3px 8px;
   }
 }
-@media (max-width: 768px) {
-    .pub-card {
-        padding: 15px;
+/* Mobile view adjustments */
+@media (max-width: 576px) {
+
+    /* Add spacing left & right */
+    .col {
+        padding-left: 18px !important;
+        padding-right: 18px !important;
     }
 
-    .pub-logo {
-        height: 100px; /* smaller image on mobile */
+    /* Reduce card width */
+    .card {
+        width: 90% !important;  /* shrink card */
+        margin: 0 auto;         /* center align */
     }
 
-    .pub-card h5 {
-        font-size: 0.95rem; /* smaller title */
+    /* Keep image + card height same as desktop */
+    .pub-img {
+        height: 180px !important;
+        object-fit: cover;
     }
 
-    .pub-card .btn {
-        font-size: 0.85rem; /* smaller button */
-        padding: 8px 20px;
-    }
 }

@@ -289,14 +289,24 @@ border-top-right-radius: 8px;
 transition: transform 0.3s ease;
 }
 
-/* Card body */
-.card-body {
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
+.card {
+    height: 100%;           /* allow full height stretching */
+    display: flex;
+    flex-direction: column;
 }
 
+.card-body {
+    flex: 1;                /* makes all bodies equal height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* spacing inside */
+    text-align: center;
+    min-height: 180px;       /* adjust as needed */
+}
+
+.card-body p {
+    flex-grow: 1;           /* expands evenly */
+}
 /* Card hover effect */
 .card:hover {
 transform: translateY(-8px);                 /* lift effect */
