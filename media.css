@@ -134,17 +134,47 @@
         display: inline;
     }
 }
+/* MOBILE FIXES */
 @media (max-width: 576px) {
 
-    /* Reduce spacing between "Hi! I am" and the typewriter */
-    .hero-title {
-        margin-top: -8px !important;  /* pulls it upward */
-        line-height: 1.1 !important;  /* tighter text */
+    /* Reduce spacing between profile picture and "Hi! I am" */
+    .hero-image {
+        margin-bottom: 0 !important; /* remove extra space under image */
     }
 
     .hero-section h1 {
-        margin-bottom: 2px !important; /* smaller gap */
+        margin-top: 0 !important;
+        margin-bottom: 4px !important; /* tighter spacing */
+        line-height: 1.1;
     }
 
-    /* Remove extra gap caused by typewriter wrapper */
+    /* Reduce space between profile image column & text column */
+    .hero-section .row {
+        row-gap: 2px !important; /* reduce gap between stacked columns */
+    }
+
+    /* Reduce spacing inside hero section */
+    .hero-section {
+        padding-top: 10px !important;
+        padding-bottom: 15px !important;
+    }
+
+    /* Reduce top spacing of typewriter wrapper */
+    #typewriter {
+        margin-top: -6px !important;
+        display: inline-block;
+    }
+
+    /* Tighten gap from <br> between name lines */
+    #typewriter br {
+        line-height: 0 !important;
+    }
+
+    /* Decrease boldness of name (Komalpreet Kaur Sandhu) */
+    .hero-title {
+        font-weight: 550 !important;   /* was 700 */
+        font-size: 28px !important;    /* adjust as needed */
+        letter-spacing: -0.3px;        /* cleaner thin look */
+    }
 }
+
