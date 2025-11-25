@@ -204,9 +204,49 @@ body {
     display: block;
     margin: 0 auto 1rem; /* reduced bottom space */
     transition: transform 0.3s ease;
+    filter: drop-shadow(0 10px 20px rgba(206, 219, 94, 0.2));
 }
 .hero-image:hover {
     transform: scale(1.05);
+}
+.hero-animate {
+    opacity: 0;
+    transform: translateY(20px);
+    filter: blur(5px);
+    animation: heroFadeSlide 1.2s ease-out forwards;
+}
+
+@keyframes heroFadeSlide {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+        filter: blur(5px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
+/* CLEAN WHOOSH RIBBON */
+.reveal-text {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.reveal-mask {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, #FFD9C0, #F6B89B); /* peach ribbon */
+    transform: translateX(-120%);
+    animation: ribbonSwipeClean 5s cubic-bezier(0.32,0.72,0,1) forwards;
+}
+
+/* smooth left-to-right swipe */
+@keyframes ribbonSwipeClean {
+    0% { transform: translateX(-120%); }
+    100% { transform: translateX(120%); }
 }
 
 /* Social Icons */
@@ -454,41 +494,75 @@ margin-bottom: 12px;
     background: url("images/back.png");
 } */
 
+/* -------------------------- */
+/* ACHIEVEMENT CARD (UPGRADED) */
+/* -------------------------- */
+
 .achievement-card {
-  background: #F7F3E9;  /* soft beige */
-  color: #0B3D91;        /* dark navy text */
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  background: #F7F3E9; /* soft beige */
+  color: #0B3D91;      /* navy text */
+  padding: 25px;
+  border-radius: 16px;
+
+  /* elegant border + soft glow */
+  border: 1px solid rgba(255, 215, 0, 0.4); /* subtle gold border */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+
+  /* transitions */
+  transition: 
+    transform 0.35s ease, 
+    box-shadow 0.35s ease,
+    background 0.35s ease,
+    border-color 0.35s ease;
   cursor: pointer;
 }
 
+/* Hover upgrade */
 .achievement-card:hover {
-  transform: translateY(-5px) scale(1.03);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-  background: #FFF7D6;  /* brighter cream on hover */
+  transform: translateY(-8px) scale(1.04);
+
+  background: #FFF7D6; /* soft warm cream */
+
+  /* brighter shadow */
+  box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+
+  /* glow border */
+  border-color: rgba(255, 215, 0, 0.8);
 }
 
+/* Date badge */
 .achievement-date {
   display: inline-block;
-  background: #FFD700; /* gold */
+  background: linear-gradient(90deg, #FFD700, #FFEA8A); /* gold gradient */
   color: #0B3D91;
-  padding: 4px 10px;
-  border-radius: 20px;
+  padding: 5px 12px;
+  border-radius: 25px;
   font-size: 0.85rem;
-  margin-bottom: 10px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  letter-spacing: 0.3px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
 }
 
-/* Initial state */
+/* Title styling */
+.achievement-card h5 {
+  font-weight: 700;
+  line-height: 1.4;
+  font-size: 1.05rem;
+}
+
+/* Entrance animation */
 .animate-on-load {
   opacity: 0;
-  transform: translateY(50px); /* slide up from below */
+  transform: translateY(55px);
 }
 
-/* Animated state */
 .animate-on-load.show {
   opacity: 1;
   transform: translateY(0);
-  transition: all 1.0s ease-out; /* smooth whoosh */
+  transition: all 0.9s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
+
 .contact-form {
     max-width: 700px; /* Large form */
     margin: 0 auto;

@@ -101,3 +101,10 @@ font-size: 0.8rem; /* if you have descriptions */
     }
 
 }
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 34px !important; /* adjust as needed */
+        line-height: 1.25;
+    }
+}
+
