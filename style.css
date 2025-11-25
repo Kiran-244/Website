@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* Hidden state */
+
+
 /* Elegant Garamond-style font for headings */
 h1, h2, h3, h4, .section-title, .hero-name, .about-heading {
     font-family: "Cormorant Garamond", serif;
@@ -68,6 +71,81 @@ body {
 .navbar-toggler-icon {
     filter: invert(1) brightness(200%);
 }
+/* STICKY EFFECT ONLY WHEN SCROLLING */
+.navbar.scrolled {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    background: rgba(255, 255, 255, 0.5);  /* light glass effect */
+    backdrop-filter: blur(12px);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+/* When scrolled — links become black */
+.navbar.scrolled .nav-link {
+    color: black !important;
+}
+
+/* When scrolled — brand becomes black */
+.navbar.scrolled .navbar-brand {
+    color: black !important;
+}
+
+/* Logo shrink (optional but smooth) */
+#navbar-logo {
+    transition: 0.3s ease-in-out;
+}
+.navbar.scrolled #navbar-logo {
+    height: 3.3rem;
+}
+/* When navbar scrolls, make hamburger icon dark */
+.navbar.scrolled .navbar-toggler-icon {
+    filter: invert(0) brightness(0); /* black icon */
+}
+
+/* Optional: make border dark too */
+.navbar.scrolled .navbar-toggler {
+    border-color: black !important;
+}
+/* Smooth animated transition */
+.navbar {
+    transition: 
+        background 0.35s ease-in-out,
+        box-shadow 0.35s ease-in-out,
+        backdrop-filter 0.35s ease-in-out,
+        padding 0.35s ease,
+        transform 0.35s ease,
+        height 0.35s ease;
+}
+
+/* Animation when sticky */
+.navbar.scrolled {
+    animation: navbarSlide 0.4s ease forwards;
+}
+
+/* KEYFRAMES: slide + fade + slight scale */
+@keyframes navbarSlide {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px) scale(1.05);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Logo animated shrinking */
+#hero-image {
+    transition: height 0.35s ease, transform 0.35s ease;
+}
+
+.navbar.scrolled #hero-image {
+    transform: scale(0.92);
+}
+
 
 /* Hero Section Wrapper */
 .hero-title{
@@ -89,7 +167,7 @@ body {
 } */
  .hero-section {
     position: relative;
-    background: url("images/bg.jpg") no-repeat center center/cover;
+    background: url("images/back.png"); no-repeat center center/cover;
     border-radius: 20px;
     padding: 35px 25px;
     text-align: center;
@@ -107,7 +185,14 @@ body {
     z-index: 2;
 }
 
+#cursor.fade-out {
+    animation: fadeOut 0.4s forwards;
+}
 
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
 
 
 /* Hero Image */
@@ -365,6 +450,9 @@ margin-bottom: 12px;
 .col {
     margin-bottom: 30px; /* vertical spacing */
 }
+/* #work .album{
+    background: url("images/back.png");
+} */
 
 .achievement-card {
   background: #F7F3E9;  /* soft beige */
