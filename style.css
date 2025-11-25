@@ -5,6 +5,20 @@
     box-sizing: border-box;
 }
 /* Hidden state */
+/* Hidden initially */
+.reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(60px) scale(0.95);
+    transition: opacity 0.9s ease-out, 
+                transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* When visible */
+.reveal-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
 
 
 /* Elegant Garamond-style font for headings */
@@ -240,7 +254,7 @@ body {
     inset: 0;
     background: linear-gradient(90deg, #FFD9C0, #F6B89B); /* peach ribbon */
     transform: translateX(-120%);
-    animation: ribbonSwipeClean 5s cubic-bezier(0.32,0.72,0,1) forwards;
+    animation: ribbonSwipeClean 8s cubic-bezier(0.32,0.72,0,1) forwards;
 }
 
 /* smooth left-to-right swipe */
@@ -248,6 +262,34 @@ body {
     0% { transform: translateX(-120%); }
     100% { transform: translateX(120%); }
 }
+/* Resume Button */
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background:#0d6efd;
+    color:white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: all 0.35s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    white-space: nowrap; /* stays neat inline */
+}
+
+.download-btn:hover {
+    transform: translateY(-3px) scale(1.03);
+    background: linear-gradient(90deg, #FFEBD8, #FFD4AF);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    color:black;
+}
+
+.download-btn i {
+    font-size: 1rem;
+}
+
 
 /* Social Icons */
 .hero-social-icons {

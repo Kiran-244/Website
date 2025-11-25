@@ -103,8 +103,17 @@ font-size: 0.8rem; /* if you have descriptions */
 }
 @media (max-width: 768px) {
     .hero-title {
-        font-size: 34px !important; /* adjust as needed */
+        font-size: 28px !important; /* adjust as needed */
         line-height: 1.25;
     }
+    .top-content{
+        font-size:30px;
+    }
 }
-
+/* Mobile alignment for resume button */
+@media (max-width: 768px) {
+    .download-btn {
+        margin-left: -70px;  /* shift slightly left */
+        align-self: flex-start; /* align to left within flex-wrap */
+    }
+}
