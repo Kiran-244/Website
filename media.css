@@ -103,7 +103,7 @@
     }
     @media (max-width: 768px) {
         .hero-title {
-            font-size: 30px !important; /* adjust as needed */
+            font-size: 28px !important; /* adjust as needed */
             line-height: 1.25;
         }
         .top-content{
@@ -134,4 +134,17 @@
         display: inline;
     }
 }
+@media (max-width: 576px) {
 
+    /* Reduce spacing between "Hi! I am" and the typewriter */
+    .hero-title {
+        margin-top: -8px !important;  /* pulls it upward */
+        line-height: 1.1 !important;  /* tighter text */
+    }
+
+    .hero-section h1 {
+        margin-bottom: 2px !important; /* smaller gap */
+    }
+
+    /* Remove extra gap caused by typewriter wrapper */
+}
