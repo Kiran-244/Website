@@ -177,4 +177,55 @@
         letter-spacing: -0.3px;        /* cleaner thin look */
     }
 }
+/* ————————————————
+   MOBILE EXPERIENCE FIXES
+   ———————————————— */
+@media (max-width: 576px) {
+
+  /* Make the entire box smaller + margin on sides */
+  .brutal-card {
+    padding: 15px;
+    width: 92% !important;      /* visible left + right margin */
+    margin: 0 auto 22px auto;   /* center on phone */
+    box-shadow: 3px 3px 0 #000;
+  }
+
+  /* SMALL logo box (width-wise!!) */
+  .logo-box {
+    width: 70px !important;     /* reduced width */
+    height: 70px !important;    /* compact height */
+    padding: 4px;
+    margin-bottom: 12px;        /* spacing below logo */
+    border: 3px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Logo inside the box – consistent size */
+  .exp-logo {
+    height: 40px !important;
+    width: auto;
+    object-fit: contain;
+  }
+
+  /* Reduce text sizes to look clean */
+  .exp-role {
+    font-size: 1rem !important;
+  }
+
+  .exp-org,
+  .exp-date,
+  .exp-location {
+    font-size: 0.82rem !important;
+  }
+
+  /* Smaller skills box on mobile */
+  .exp-skills {
+    font-size: 0.75rem !important;
+    padding: 5px 8px !important;
+    box-shadow: 2px 2px 0 #000;
+  }
+
+}
 

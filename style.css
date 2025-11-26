@@ -685,3 +685,128 @@ margin-bottom: 12px;
     color: #FFD700; /* golden hover effect */
     transform: translateY(-2px);
 }
+/* Brutalist section base */
+.brutal-section {
+  background: #fff;
+  border-top: 4px solid #000;
+  padding-top: 60px;
+}
+
+
+/* Brutalist Card */
+.brutal-card {
+  background: #fefefe;
+  border: 4px solid #000;
+  padding: 25px;
+  box-shadow: 6px 6px 0 #000;
+  transition: 0.2s ease-in-out;
+}
+
+.brutal-card:hover {
+  box-shadow: 12px 12px 0 #000;
+  transform: translate(-4px, -4px);
+}
+
+/* Logo box */
+.logo-box {
+  padding: 10px;
+  background: #fff;
+}
+
+.brutal-border {
+  border: 3px solid #000;
+}
+
+.exp-logo {
+  width: 70px;
+  height: auto;
+}
+
+/* Text styles */
+.exp-role {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color:blue;
+}
+
+.exp-org,
+.exp-date,
+.exp-location {
+  font-size: 1rem;
+  margin: 2px 0;
+}
+
+.exp-list {
+  margin-top: 10px;
+}
+
+.exp-list li {
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.exp-skills {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  background: #f0f0f0;
+  padding: 6px;
+  border: 2px solid #000;
+  display: inline-block;
+}
+/* Skills box – brutalist yellow by default */
+.exp-skills {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  background: #ffeb3b; /* Yellow base */
+  padding: 8px 14px;
+  border: 3px solid #000;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.18s ease-in-out;
+  box-shadow: 4px 4px 0 #000;
+}
+
+/* Hover Effect – brutalist pop */
+.exp-skills:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 8px 8px 0 #000;
+  background: #fff35c; /* slight brighter yellow */
+  border-width: 4px;
+}
+/* Fix logo size: same height, auto width */
+.exp-logo {
+  height: 80px;     /* increase or decrease as you like */
+  width: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Logo container improvement */
+.logo-box {
+  padding: 12px;
+  background: #fff;
+  width: 100%;
+  border: 3px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 110px; /* forces all logos to sit in the same box height */
+}
+/* Jelly animation keyframes */
+@keyframes jellySlide {
+  0% { transform: scale(1, 1) translateY(0); }
+  30% { transform: scale(1.04, 0.96) translateY(-3px); }
+  50% { transform: scale(0.97, 1.03) translateY(-2px); }
+  70% { transform: scale(1.02, 0.98) translateY(-1px); }
+  100% { transform: scale(1, 1) translateY(0); }
+}
+
+/* Apply jelly effect on hover to all experience cards */
+.brutal-card:hover {
+  animation: jellySlide 1.2s ease-in-out;
+  box-shadow: 10px 10px 0 #000;
+}
+
