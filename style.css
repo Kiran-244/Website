@@ -686,127 +686,201 @@ margin-bottom: 12px;
     transform: translateY(-2px);
 }
 /* Brutalist section base */
+/* 🌸 Section Base - Minimalist & Soft */
 .brutal-section {
-  background: #fff;
-  border-top: 4px solid #000;
-  padding-top: 60px;
+  background: #ffffff;
+  border-top: 0px;
+  padding-top: 50px;
 }
 
-
-/* Brutalist Card */
+/* 🌸 Minimalist Card (Soft Pookie Style) */
 .brutal-card {
-  background: #fefefe;
-  border: 4px solid #000;
-  padding: 25px;
-  box-shadow: 6px 6px 0 #000;
-  transition: 0.2s ease-in-out;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  padding: 22px;
+  border-radius: 16px;                   /* soft round */
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+  transition: 0.25s ease-in-out;
 }
 
 .brutal-card:hover {
-  box-shadow: 12px 12px 0 #000;
-  transform: translate(-4px, -4px);
+  transform: translateY(-6px);
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.12);
 }
 
-/* Logo box */
+/* 🌸 Logo Container */
 .logo-box {
   padding: 10px;
-  background: #fff;
+  background: #fafafa;
+  border-radius: 12px;
+  border: 1px solid #eaeaea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
 }
 
-.brutal-border {
-  border: 3px solid #000;
-}
-
+/* 🌸 Logo */
 .exp-logo {
-  width: 70px;
-  height: auto;
+  height: 60px;
+  width: auto;
+  object-fit: contain;
 }
 
-/* Text styles */
+/* 🌸 Role Text */
 .exp-role {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 800;
-  color:blue;
+  color: #0d6efd;     /* soft pookie purple */
+  margin-bottom: 6px;
+}
+.exp-org{
+    color:#0d6efd;
+}
+/* 🌸 Organization Text */
+.exp-org {
+  font-size: 0.96rem;
+  color:#003f94;
+}
+.exp-location{
+font-size: 0.96rem;
+  color:#e6184f;
 }
 
-.exp-org,
-.exp-date,
-.exp-location {
-  font-size: 1rem;
-  margin: 2px 0;
-}
-
+/* 🌸 Bullet List */
 .exp-list {
   margin-top: 10px;
 }
 
 .exp-list li {
-  font-size: 1rem;
+  font-size: 0.95rem;
   margin-bottom: 4px;
+  color: #555;
 }
 
+/* 🌸 Soft Pookie Skills Tag */
 .exp-skills {
-  margin-top: 10px;
-  font-size: 0.95rem;
+  margin-top: 12px;
+  font-size: 0.85rem;
   font-weight: 600;
-  background: #f0f0f0;
-  padding: 6px;
-  border: 2px solid #000;
-  display: inline-block;
-}
-/* Skills box – brutalist yellow by default */
-.exp-skills {
-  margin-top: 10px;
-  font-size: 0.95rem;
-  font-weight: 700;
-  background: #ffeb3b; /* Yellow base */
-  padding: 8px 14px;
-  border: 3px solid #000;
-  display: inline-block;
+  background: #e9f0ff;            /* cute baby blue */
+  color: #4a4a4a;
+  padding: 6px 12px;
+  border-radius: 10px;
+  border: 1px solid #d0dcff;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.05);
   cursor: pointer;
-  transition: all 0.18s ease-in-out;
-  box-shadow: 4px 4px 0 #000;
+  transition: 0.25s ease;
 }
 
-/* Hover Effect – brutalist pop */
+/* 🌸 Hover - Soft Glow */
 .exp-skills:hover {
-  transform: translate(-4px, -4px);
-  box-shadow: 8px 8px 0 #000;
-  background: #fff35c; /* slight brighter yellow */
-  border-width: 4px;
-}
-/* Fix logo size: same height, auto width */
-.exp-logo {
-  height: 80px;     /* increase or decrease as you like */
-  width: auto;
-  object-fit: contain;
-  display: block;
-  margin: 0 auto;
+  background: #dce7ff;
+  color: #000;
+  transform: translateY(-3px);
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
 }
 
-/* Logo container improvement */
-.logo-box {
-  padding: 12px;
-  background: #fff;
-  width: 100%;
-  border: 3px solid #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 110px; /* forces all logos to sit in the same box height */
-}
-/* Jelly animation keyframes */
+/* 🌸 Jelly animation still usable for cute bounce */
 @keyframes jellySlide {
-  0% { transform: scale(1, 1) translateY(0); }
-  30% { transform: scale(1.04, 0.96) translateY(-3px); }
-  50% { transform: scale(0.97, 1.03) translateY(-2px); }
-  70% { transform: scale(1.02, 0.98) translateY(-1px); }
-  100% { transform: scale(1, 1) translateY(0); }
+  0% { transform: scale(1,1); }
+  40% { transform: scale(1.05,0.95); }
+  60% { transform: scale(0.97,1.03); }
+  100% { transform: scale(1,1); }
+}
+/* 🌟 Golden Glow Hover */
+.exp-skills:hover {
+  background: #fff8e1;                          /* soft pastel gold background */
+  color: #7a5a00;                                /* warm brown-gold text */
+  transform: translateY(-4px);
+  border: 1px solid #f7c948;                     /* thin gold border */
+  box-shadow: 0px 0px 12px rgba(247, 201, 72, 0.6),
+              0px 0px 20px rgba(252, 234, 187, 0.7); /* golden glow */
 }
 
-/* Apply jelly effect on hover to all experience cards */
 .brutal-card:hover {
-  animation: jellySlide 1.2s ease-in-out;
-  box-shadow: 10px 10px 0 #000;
+  transform: translateY(-6px);
+  box-shadow: 
+      0px 8px 20px rgba(0, 0, 0, 0.12),
+      0px 0px 12px rgba(255, 215, 0, 0.4),        /* outer golden glow */
+      0px 0px 15px rgba(255, 223, 92, 0.3);       /* soft warm gold */
+  border-color: #f7c948;                          /* subtle gold frame */
 }
+
+/* Section Base */
+.brutal-stats-section {
+  border-top: 1px solid #e5e5e5;
+  background: #fafafa;
+  padding-top: 60px;
+}
+
+/* Counter Box - minimalist card */
+.brutal-counter-box {
+  border: 1px solid #ddd;
+  padding: 22px 10px;
+  margin: 10px auto;
+  background: #ffffff;
+  border-radius: 10px;                 /* smooth edges */
+  transition: 0.25s ease-in-out;
+  box-shadow: 0 0 0 transparent;        /* remove brutal shadow */
+}
+
+/* Minimalist hover effect */
+.brutal-counter-box:hover {
+  transform: translateY(-5px);          /* subtle lift */
+  border-color: #999;                   /* soft focus */
+  background: #f9f9f9;
+}
+.brutal-counter-box:hover {
+  transform: translateY(-5px);
+  border-color: #6c63ff;     /* soft purple */
+  background: #f3f1ff;       /* light lavender */
+}
+
+
+/* Jelly Animation Frames */
+@keyframes jellySlide {
+  0% { transform: scale(1, 1); }
+  30% { transform: scale(1.04, 0.96); }
+  50% { transform: scale(0.96, 1.04); }
+  70% { transform: scale(1.02, 0.98); }
+  100% { transform: scale(1, 1); }
+}
+
+/* Counter Number */
+.brutal-counter-num {
+  font-size: 2.3rem;
+  font-weight: 900;
+  letter-spacing: -1px;
+}
+
+/* Number + Plus aligned */
+.counter-flex {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; 
+  gap: 2px;
+}
+
+/* Big Plus Sign */
+.plus-sign {
+  font-size: 3.2rem;
+  font-weight: 900;
+  margin-left: 2px;
+  line-height: 0.7;
+  display: inline-block;
+  transform: translateY(-4px);
+      line-height: 1;     /* reduces vertical offset */
+    position: relative;
+    top: -2px;          /* adjust up/down */
+}
+
+/* Counter Label */
+.brutal-counter-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 4px;
+  text-transform: uppercase;
+}
+
 

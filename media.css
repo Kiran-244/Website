@@ -228,4 +228,35 @@
   }
 
 }
+@media (max-width: 576px) {
 
+  /* MAKE EACH COUNTER FULL WIDTH → VERTICAL STACK */
+  .brutal-counter-box {
+    width: 90% !important;
+    display: block;
+    margin: 0 auto 18px auto;
+    padding: 20px 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+  }
+
+  /* Number + Plus smaller */
+  .brutal-counter-num {
+    font-size: 2rem;
+  }
+
+  .plus-sign {
+    font-size: 2rem;
+  }
+
+  .brutal-counter-label {
+    font-size: 0.8rem;
+  }
+
+  /* MOBILE HOVER/TOUCH EFFECT */
+  .brutal-counter-box:hover {
+    background: #eef0ff;         /* lighter blue-lavender */
+    border-color: #777;
+    transform: translateY(-3px);
+  }
+}
