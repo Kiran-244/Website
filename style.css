@@ -181,7 +181,7 @@ body {
 } */
  .hero-section {
     position: relative;
-    background: url("images/back.png"); no-repeat center center/cover;
+    background: url("images/back.png"); 
     border-radius: 20px;
     padding: 35px 25px;
     text-align: center;
@@ -783,7 +783,6 @@ margin-bottom: 12px;
 
 /* 🌸 Role Text */
 .exp-role {
-  font-size: 1.4rem;
   font-weight: 800;
   color: #0d6efd;     /* soft pookie purple */
   margin-bottom: 6px;
@@ -793,7 +792,6 @@ margin-bottom: 12px;
 }
 /* 🌸 Organization Text */
 .exp-org {
-  font-size: 0.96rem;
   color:#003f94;
 }
 .exp-location{
@@ -937,4 +935,27 @@ font-size: 0.96rem;
   text-transform: uppercase;
 }
 
+.seo-text {
+  position: absolute;
+  left: -9999px; /* Hidden visually but readable by Google */
+}
+
+
+#cursor {
+  animation: blink 1s infinite;
+}
+
+.stop-blink {
+  animation: none;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
 

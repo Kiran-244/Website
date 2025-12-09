@@ -4,17 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <meta name="description"
+        content="Official portfolio of Dr.Komalpreet Kaur Sandhu, Assistant Professor of Zoology, View research interests, academic profile, publications and contact details.">
+    <title>Dr.Komalpreet Kaur Sandhu | Assistant Professor of Zoology</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Open+Sans:wght@400;600&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="media.css">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@600&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="media.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Poppins:wght@300;400;500;600&display=swap"
@@ -34,11 +32,11 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg" role="navigation">
         <div class="container-fluid d-flex justify-content-between align-items-center">
             <!-- <a class="navbar-brand" id="brand-name" href="#">My Portfolio</a> -->
-            <a class="navbar-brand" href="#">
-                <img id="hero-image" src="images/black_remove_logo.png" alt="Name Logo" style="height:4rem;">
+            <a class="navbar-brand" href="#home">
+                <img id="hero-image" src="images/black_remove_logo.png" alt="Dr. Komalpreet Kaur Sandhu Assistant Professor of Zoology" style="height:4rem;">
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -69,6 +67,7 @@
             </div>
         </div>
     </nav>
+
     <section id="home">
         <div class="hero-wrapper animate-on-load">
             <section class="hero-section py-5">
@@ -77,35 +76,39 @@
 
                         <!-- Left Side Image -->
                         <div class="col-md-5 mb-md-0">
-                            <img src="images/lav-logo1.png" class="hero-image"
-                                alt="Professor Image">
+                            <img src="images/lav-logo1.png" class="hero-image" alt="Dr Komalpreet Kaur Sandhu Assistant Professor Zoology">
                         </div>
 
                         <!-- Right Side Content -->
                         <div class="col-md-7 text-center text-md-start py-4">
 
                             <!-- HI I AM -->
-                            <h1 class="fw-bold display-6 reveal-text hero-animate" style="font-size:38px;">
+                            <h2 class="fw-bold display-6 reveal-text hero-animate" style="font-size:38px;">
                                 <span class="text-content top-content">Hi! I am</span>
                                 <span class="reveal-mask"></span>
-                            </h1>
+                            </h2>
 
                             <!-- TYPEWRITER NAME  (NO ribbon here) -->
-                            <h1 class="fw-bold display-6 hero-title hero-animate delay-1" style="line-height:1.2;">
-                                <span id="typewriter">
+                            <h1 class="fw-bold display-6 hero-title" style="line-height:1.2;">
+                                <!-- ✅ SEO fallback (Google reads this) -->
+                                <span class="seo-text">Dr. Komalpreet Kaur Sandhu</span>
+
+                                <!-- ✅ Animated text (visual only) -->
+                                <span id="typewriter" aria-hidden="true">
                                     <span id="line1"></span><br>
                                     <span id="line2"></span><br>
                                     <span id="cursor">|</span>
                                 </span>
                             </h1>
 
+
                             <!-- SUBTITLE -->
-                            <h4 class="text-primary reveal-text hero-animate delay-2">
+                            <h2 class="text-primary reveal-text hero-animate delay-2">
                                 <span class="text-content">
                                     Assistant Professor, Akal University Talwandi Sabo
                                 </span>
                                 <span class="reveal-mask"></span>
-                            </h4>
+                            </h2>
 
                             <!-- DESKTOP PARAGRAPH -->
                             <p class="lead d-none d-md-block reveal-text hero-animate delay-3">
@@ -129,8 +132,8 @@
 
                             <div
                                 class="hero-social-icons mt-4 d-flex justify-content-center justify-content-md-start flex-wrap align-items-center">
-                                <a href="https://www.facebook.com" target="_blank" class="social-icon">
-                                    <i class="fab fa-facebook-f"></i>
+                                <a href="https://scholar.google.com/citations?user=G8vj3j4AAAAJ&hl=en" target="_blank" class="social-icon">
+                                  <i class="fa-brands fa-google-scholar"></i>
                                 </a>
 
                                 <a href="https://www.linkedin.com/in/dr-komalpreet-kaur-sandhu-b39899138?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BEQJU%2BzkzRDmuGCFQYtrP4w%3D%3D"
@@ -143,7 +146,8 @@
                                 </a>
 
                                 <!-- DOWNLOAD RESUME INLINE ON DESKTOP, NEXT LINE ON MOBILE -->
-                                <a href="resume.html" class="download-btn ms-3 mt-md-0" style="background-color: #b1b4ff; border:2px solid #1118e3;">
+                                <a href="resume.html" class="download-btn ms-3 mt-md-0"
+                                    style="background-color: #b1b4ff; border:2px solid #1118e3;">
                                     <i class="fas fa-download"></i> Resume
                                 </a>
                             </div>
@@ -155,42 +159,44 @@
             </section>
         </div>
     </section>
+
     <section id="stats" class="py-5 brutal-stats-section" style="background-color:#7a7df0;">
-    <div class="container">
-        <h2 class="section-title mb-4" style="color:white;">Milestones</h2>
+        <div class="container">
+            <h2 class="section-title mb-4" style="color:white;">Milestones</h2>
 
-        <div class="row text-center">
+            <div class="row text-center">
 
-            <!-- Counter 1 -->
-            <div class="col-4 col-md-3 brutal-counter-box">
-                <div class="counter-flex">
+                <!-- Counter 1 -->
+                <div class="col-4 col-md-3 brutal-counter-box">
+                    <div class="counter-flex">
                     <div class="brutal-counter-num" data-target="15">0</div>
-                    <span class="plus-sign">+</span>
+                        <span class="plus-sign">+</span>
+                    </div>
+                    <p class="brutal-counter-label">Research Papers</p>
                 </div>
-                <p class="brutal-counter-label">Research Papers</p>
-            </div>
 
-            <!-- Counter 2 -->
-            <div class="col-4 col-md-3 brutal-counter-box">
-                <div class="counter-flex">
-                    <div class="brutal-counter-num" data-target="400">0</div>
-                    <span class="plus-sign">+</span>
+                <!-- Counter 2 -->
+                <div class="col-4 col-md-3 brutal-counter-box">
+                    <div class="counter-flex">
+                        <div class="brutal-counter-num" data-target="400">0</div>
+                        <span class="plus-sign">+</span>
+                    </div>
+                    <p class="brutal-counter-label">Students Taught</p>
                 </div>
-                <p class="brutal-counter-label">Students Taught</p>
-            </div>
 
-            <!-- Counter 3 -->
-            <div class="col-4 col-md-3 brutal-counter-box">
-                <div class="counter-flex">
-                    <div class="brutal-counter-num" data-target="8">0</div>
-                    <span class="plus-sign">+</span>
+                <!-- Counter 3 -->
+                <div class="col-4 col-md-3 brutal-counter-box">
+                    <div class="counter-flex">
+                       <div class="brutal-counter-num" data-target="8">0</div>
+                        <span class="plus-sign">+</span>
+                    </div>
+                    <p class="brutal-counter-label">Seminars Organized</p>
                 </div>
-                <p class="brutal-counter-label">Seminars Organized</p>
-            </div>
 
+            </div>
         </div>
-    </div>
     </section>
+
     <section id="about" class="py-2 reveal-on-scroll">
         <div class="container">
 
@@ -206,10 +212,10 @@
                         <div class="timeline-item reveal-on-scroll">
                             <div class="timeline-dot"></div>
                             <div class="timeline-content">
-                                <h5 class="fw-bold">Ph.D. in Parasitology & Pest Control</h5>
+                                <h3 class="fw-bold">Ph.D. in Parasitology & Pest Control</h3>
                                 <p class="text-muted mb-1">Punjab Agricultural University</p>
-                                <span class="timeline-year">2017-20</span>
-                                <p>Research focused on Parasitology and Vest Control</p>
+                                <Time class="timeline-year">2017-20</Time>
+                                <p>Research focused on Parasitology and Pest Control</p>
                             </div>
                         </div>
 
@@ -217,9 +223,9 @@
                         <div class="timeline-item reveal-on-scroll">
                             <div class="timeline-dot"></div>
                             <div class="timeline-content">
-                                <h5 class="fw-bold">M.Sc. Zoology</h5>
+                                <h3 class="fw-bold">M.Sc. Zoology</h3>
                                 <p class="text-muted mb-1">Punjab Agricultural University</p>
-                                <span class="timeline-year">2014-16</span>
+                                <Time class="timeline-year">2014-16</Time>
                                 <p>Vertebrate Pest Management</p>
                             </div>
                         </div>
@@ -228,9 +234,9 @@
                         <div class="timeline-item reveal-on-scroll">
                             <div class="timeline-dot"></div>
                             <div class="timeline-content">
-                                <h5 class="fw-bold">B.Sc. Life Sciences</h5>
+                                <h3 class="fw-bold">B.Sc. Life Sciences</h3>
                                 <p class="text-muted mb-1">SR Govt. College for Women Amritsar</p>
-                                <span class="timeline-year">2011-14</span>
+                                <Time class="timeline-year">2011-14</Time>
                                 <p>Strong foundation in zoology, botany, chemistry, and biological sciences.</p>
                             </div>
                         </div>
@@ -276,7 +282,7 @@
 
                     <div class="col-md-2 text-center">
                         <div class="logo-box brutal-border">
-                            <img src="images/pau.png" alt="PAU Logo" class="img-fluid exp-logo">
+                            <img src="images/pau.png" alt="Punjab Agricultural University Logo" class="img-fluid exp-logo">
                         </div>
                     </div>
 
@@ -320,90 +326,90 @@
     <!-- Publication Card 1 -->
     <section id="work" class="py-2 animate-on-load behind reveal-on-scroll">
         <h2 class="text-center section-title">Publications</h2>
+    
         <div class="album py-5 bg-body-tertiary">
             <div class="container">
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                    <div class="col">
+                    <article class="col">
                         <div class="card shadow-sm">
                             <img src="new_images/a1.jpg" loading="lazy" class="card-img-top pub-img"
                                 alt="Research Image">
                             <div class="card-body d-flex flex-column align-items-center">
-                                <p>Potential of Green Nanoparticles as Mosquitocidal Agents</p>
+                                <h4>Potential of Green Nanoparticles as Mosquitocidal Agents</h4>
                                 <a href="https://www.researchgate.net/publication/389271564_Potential_of_Green_Nanoparticles_as_Mosquitocidal_Agents"
-                                    target="_blank" class="btn btn-primary my-2 new-style">Click Here</a>
+                                    target="_blank" class="btn btn-primary my-2 new-style">View on ResearchGate</a>
                             </div>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="col">
+                    <article class="col">
                         <div class="card shadow-sm">
                             <img src="new_images/a2.jpg" loading="lazy" class="card-img-top pub-img"
                                 alt="Research Image">
                             <div class="card-body d-flex flex-column align-items-center">
-                                <p>Nanobiotechnology's Efficient Role for Control of Mosquito-Borne Diseases Via Aqua
-                                    Nano Emulsions</p>
+                                <h4>Nanobiotechnology's Efficient Role for Control of Mosquito-Borne Diseases Via Aqua
+                                    Nano Emulsions</h4>
                                 <a href="https://www.researchgate.net/publication/389271783_Bridging_Sustainable_Solutions_in_a_Multidisciplinary_Approach_4_Nanobiotechnology's_Efficient_Role_for_Control_of_Mosquito-Borne_Diseases_Via_Aqua_Nano_Emulsions"
-                                    target="_blank" class="btn btn-primary my-2 new-style">Click Here</a>
+                                    target="_blank" class="btn btn-primary my-2 new-style">View on ResearchGate</a>
                             </div>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="col">
+                    <article class="col">
                         <div class="card shadow-sm">
                             <img src="new_images/a3.jpg" loading="lazy" class="card-img-top pub-img"
                                 alt="Research Image">
                             <div class="card-body d-flex flex-column align-items-center">
-                                <p>Larvicidal potential of copper sulphide nano aqua dispersions against Aedes
-                                    aegypti(Linnaeus)</p>
+                                <h4>Larvicidal potential of copper sulphide nano aqua dispersions against Aedes
+                                    aegypti(Linnaeus)</h4>
                                 <a href="https://www.researchgate.net/publication/362712392_Larvicidal_potential_of_copper_sulphide_nano_aqua_dispersions_against_Aedes_aegyptiLinnaeus"
-                                    target="_blank" class="btn btn-primary my-2 new-style">Click Here</a>
+                                    target="_blank" class="btn btn-primary my-2 new-style">View on ResearchGate</a>
                             </div>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="col">
+                    <article class="col">
                         <div class="card shadow-sm">
                             <img src="new_images/a4.png" loading="lazy" class="card-img-top pub-img"
                                 alt="Research Image">
                             <div class="card-body d-flex flex-column align-items-center">
-                                <p>Observations of growth index and morphological characters of the Indian gerbil,
-                                    Tatera indica (Hardwicke) as an attempt to record intra-specific variations</p>
+                                <h4>Observations of growth index and morphological characters of the Indian gerbil,
+                                    Tatera indica (Hardwicke) as an attempt to record intra-specific variations</h4>
                                 <a href="https://www.researchgate.net/publication/375342704_Observations_of_growth_index_and_morphological_characters_of_the_Indian_gerbil_Tatera_indica_Hardwicke_as_an_attempt_to_record_intra-specific_variations"
-                                    target="_blank" class="btn btn-primary my-2 new-style">Click Here</a>
+                                    target="_blank" class="btn btn-primary my-2 new-style">View on ResearchGate</a>
                             </div>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="col">
+                    <article class="col">
                         <div class="card shadow-sm">
                             <img src="new_images/a5.jpg" loading="lazy" class="card-img-top pub-img"
                                 alt="Research Image">
                             <div class="card-body d-flex flex-column align-items-center">
-                                <p>First Report on larvicidal potential of Zinc sulfide aqua nanoparticles against Aedes
-                                    aegypti (Linnaeus)</p>
-                                <a href="" target="_blank" class="btn btn-primary my-2 new-style">Click Here</a>
+                                <h3>First Report on larvicidal potential of Zinc sulfide aqua nanoparticles against Aedes
+                                    aegypti (Linnaeus)</h3>
+                                <a href="" target="_blank" class="btn btn-primary my-2 new-style">View on ResearchGate</a>
                             </div>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="col">
+                    <article class="col">
                         <div class="card shadow-sm">
                             <img src="new_images/exp.jpg" loading="lazy" class="card-img-top pub-img"
                                 alt="Research Image">
                             <div class="card-body d-flex flex-column align-items-center">
-                                <p>Dive into a broader range of my publications, studies, and academic contributions.
-                                </p>
+                                <h4>Dive into a broader range of my publications, studies, and academic contributions.
+                                </h4>
                                 <a href="https://www.researchgate.net/profile/Komalpreet-Kaur-Sandhu" target="_blank"
-                                    class="btn btn-primary my-2 new-style">Click Here</a>
+                                    class="btn btn-primary my-2 new-style">View on ResearchGate</a>
                             </div>
                         </div>
-                    </div>
+                    </article>
 
                 </div>
             </div>
         </div>
     </section>
-    <!-- CONFETTI CANVAS -->
 
     <!-- ACHIEVEMENTS SECTION -->
     <section id="achievements" class="py-5 animate-on-load" style="background:#7a7df0; position: relative;">
@@ -459,35 +465,35 @@
     </section>
 
 
-    <section class="contact-section">
-  <div class="container">
-    <h2 class="contact-title">HAVE SOME QUESTIONS?</h2>
+    <section  id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="contact-title">HAVE SOME QUESTIONS?</h2>
 
-    <div class="contact-wrapper">
+            <div class="contact-wrapper">
 
-      <!-- Left Illustration -->
-      <div class="contact-illustration">
-        <img src="images/mail.png" alt="Contact Icon">
-      </div>
+                <!-- Left Illustration -->
+                <div class="contact-illustration">
+                    <img src="images/mail.png" alt="Contact Icon">
+                </div>
 
-      <!-- Right Form -->
-      <form class="contact-form">
+                <!-- Right Form -->
+                <form class="contact-form">
 
-        <div class="input-row">
-          <input type="text" placeholder="First Name" required>
-          <input type="text" placeholder="Last Name" required>
+                    <div class="input-row">
+                        <input type="text" placeholder="First Name" required>
+                        <input type="text" placeholder="Last Name" required>
+                    </div>
+
+                    <input type="email" placeholder="What's your email?" required>
+
+                    <textarea placeholder="Your questions..." rows="4" required></textarea>
+
+                    <button type="submit" class="contact-btn">SEND MESSAGE</button>
+
+                </form>
+            </div>
         </div>
-
-        <input type="email" placeholder="What's your email?" required>
-
-        <textarea placeholder="Your questions..." rows="4" required></textarea>
-
-        <button type="submit" class="contact-btn">SEND MESSAGE</button>
-
-      </form>
-    </div>
-  </div>
-</section>
+    </section>
 
 
     <footer class="site-footer py-4">
@@ -502,68 +508,62 @@
                 <a href="mailto:komalpreetkaur903@gmail.com"><i class="fas fa-envelope"></i></a>
             </div>
             <p>Made with ❤️ By Kiranpreet Kaur</p>
-            <!-- <p class="credit">
-    Designed by 
-    <span>
-        <a href="https://www.linkedin.com/in/kiranpreet-kaur/" target="_blank">
-            Kiranpreet Kaur
-        </a>
-    </span> -->
+
             </p>
 
         </div>
     </footer>
     <script>
-  const counters = document.querySelectorAll('.brutal-counter-num');
+        const counters = document.querySelectorAll('.brutal-counter-num');
 
-  // Function to animate counters
-  const startCounting = () => {
-    counters.forEach(counter => {
-      const target = +counter.getAttribute('data-target');
-      let current = 0;
+        // Function to animate counters
+        const startCounting = () => {
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                let current = 0;
 
-      const increment = target / 300; // slow pace
+                const increment = target / 300; // slow pace
 
-      const updateCounter = () => {
-        current += increment;
+                const updateCounter = () => {
+                    current += increment;
 
-        if (current < target) {
-          counter.innerText = Math.floor(current);
-          requestAnimationFrame(updateCounter);
-        } else {
-          counter.innerText = target;
-        }
-      };
+                    if (current < target) {
+                        counter.innerText = Math.floor(current);
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
 
-      updateCounter();
-    });
-  };
+                updateCounter();
+            });
+        };
 
-  // Reset counters back to 0
-  const resetCounters = () => {
-    counters.forEach(counter => {
-      counter.innerText = "0";
-    });
-  };
+        // Reset counters back to 0
+        const resetCounters = () => {
+            counters.forEach(counter => {
+                counter.innerText = "0";
+            });
+        };
 
-  // Observer → triggers every time section is visible
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          startCounting();    // start animation
-        } else {
-          resetCounters();     // reset animation when user scrolls away
-        }
-      });
-    },
-    {
-      threshold: 0.5   // counter starts when 50% of section is visible
-    }
-  );
+        // Observer → triggers every time section is visible
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        startCounting();    // start animation
+                    } else {
+                        resetCounters();     // reset animation when user scrolls away
+                    }
+                });
+            },
+            {
+                threshold: 0.5   // counter starts when 50% of section is visible
+            }
+        );
 
-  observer.observe(document.querySelector('#stats'));
-</script>
+        observer.observe(document.querySelector('#stats'));
+    </script>
 
 
     <script>
@@ -600,67 +600,54 @@
         });
     </script>
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
 
-            const line1Text = "Dr. Komalpreet Kaur";
-            const line2Text = "Sandhu";
+    const line1Text = "Dr. Komalpreet Kaur";
+    const line2Text = "Sandhu";
 
-            let i = 0;
-            let j = 0;
+    let i = 0;
+    let j = 0;
 
-            const speed = 140; // slower typing
+    const speed = 100;
 
-            const line1 = document.getElementById("line1");
-            const line2 = document.getElementById("line2");
-            const cursor = document.getElementById("cursor");
+    const line1 = document.getElementById("line1");
+    const line2 = document.getElementById("line2");
+    const cursor = document.getElementById("cursor");
 
-            function updateCursorPosition() {
-                // Move cursor after line1 while typing first line
-                if (j === 0) {
-                    line1.insertAdjacentElement("afterend", cursor);
-                }
-                // Move cursor after line2 while typing second line
-                else {
-                    line2.insertAdjacentElement("afterend", cursor);
-                }
-            }
+    function updateCursor() {
+        if (j === 0) {
+            line1.after(cursor);
+        } else {
+            line2.after(cursor);
+        }
+    }
 
-            function typeLine1() {
-                if (i < line1Text.length) {
-                    line1.textContent += line1Text.charAt(i);
-                    i++;
-                    updateCursorPosition();
-                    setTimeout(typeLine1, speed);
-                } else {
-                    setTimeout(typeLine2, 300);
-                }
-            }
+    function typeLine1() {
+        if (i < line1Text.length) {
+            line1.textContent += line1Text.charAt(i);
+            i++;
+            updateCursor();
+            setTimeout(typeLine1, speed);
+        } else {
+            setTimeout(typeLine2, 300);
+        }
+    }
 
-            function typeLine2() {
-                if (j < line2Text.length) {
-                    line2.textContent += line2Text.charAt(j);
-                    j++;
-                    updateCursorPosition();
-                    setTimeout(typeLine2, speed);
-                } else {
-                    cursor.classList.add("stop-blink"); // stop blinking when finished
-                }
-            }
-            function typeLine2() {
-                if (j < line2Text.length) {
-                    line2.textContent += line2Text.charAt(j);
-                    j++;
-                    updateCursorPosition();
-                    setTimeout(typeLine2, speed);
-                } else {
-                    cursor.classList.add("fade-out"); // 👈 cursor disappears
-                }
-            }
+    function typeLine2() {
+        if (j < line2Text.length) {
+            line2.textContent += line2Text.charAt(j);
+            j++;
+            updateCursor();
+            setTimeout(typeLine2, speed);
+        } else {
+            cursor.classList.add("fade-out");  // smooth finish
+        }
+    }
 
+    setTimeout(typeLine1, 300);
+});
+</script>
 
-            setTimeout(typeLine1, 300);
-        });
-    </script>
 
 
     <script src="script.js"></script>

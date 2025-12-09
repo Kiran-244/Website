@@ -235,7 +235,7 @@
   .brutal-counter-box {
     width: 90% !important;
     display: block;
-    margin: 0 auto 18px auto;
+    margin: 0 auto 20px auto;
     padding: 20px 10px;
     border-radius: 10px;
     border: 1px solid #ccc;
@@ -261,3 +261,4 @@
     transform: translateY(-3px);
   }
 }
+

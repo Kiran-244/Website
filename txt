@@ -1,0 +1,56 @@
+ const counters = document.querySelectorAll('.brutal-counter-num');
+
+  // Function to animate counters
+  const startCounting = () => {
+    counters.forEach(counter => {
+      const target = +counter.getAttribute('data-target');
+      let current = 0;
+
+      const increment = target / 300; // slow pace
+
+      const updateCounter = () => {
+        current += increment;
+
+        if (current < target) {
+          counter.innerText = Math.floor(current);
+          requestAnimationFrame(updateCounter);
+        } else {
+          counter.innerText = target;
+        }
+      };
+
+      updateCounter();
+    });
+  };
+
+  // Reset counters back to 0
+  const resetCounters = () => {
+    counters.forEach(counter => {
+      counter.innerText = "0";
+    });
+  };
+
+  // Observer → triggers every time section is visible
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          startCounting();    // start animation
+        } else {
+          resetCounters();     // reset animation when user scrolls away
+        }
+      });
+    },
+    {
+      threshold: 0.5   // counter starts when 50% of section is visible
+    }
+  );
+
+  observer.observe(document.querySelector('#stats'));
+    <h1 class="fw-bold display-6 hero-title hero-animate delay-1" style="line-height:1.2;">
+                                <span id="typewriter">
+                                    <span id="line1"></span><br>
+                                    <span id="line2"></span><br>
+                                    <span id="cursor">|</span>
+                                </span>
+                            </h1>
